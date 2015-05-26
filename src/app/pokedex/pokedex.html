@@ -1,0 +1,14 @@
+<section>
+	<md-input-container md-no-float>
+		<Label>Search for Pokemon:</Label>
+		<input type="text" class="form-control" ng-model="searchPokemon"/>
+	</md-input-container>
+	<md-card class="panel" ng-repeat="pokemon in pokemonOnPage | filter: searchPokemon">
+		<md-card-content>
+			<h3>{{pokemon.name}}</h3>
+			<li ng-repeat="ability in pokemon.abilities">
+				{{ability.name}}
+			</li>
+		</md-card-content>
+	</md-card>
+</section>
