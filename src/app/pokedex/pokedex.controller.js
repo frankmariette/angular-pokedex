@@ -13,7 +13,7 @@ angular.module('angularPokedex').controller('PokedexController', function ($http
 			.error(function(error){
 				$log.log(error);
 			});
-	};
+	}
 	
 	$scope.pagination = {
 		current: 1
@@ -36,8 +36,8 @@ angular.module('angularPokedex').controller('PokedexController', function ($http
 			})
 			.error(function(error){
 				$log.log(error);
-			})	
-	};
+			});	
+	}
 	
 	fetchAllPokemon();
 	

@@ -8,6 +8,13 @@ describe('controllers', function(){
   beforeEach(inject(function($rootScope) {
     scope = $rootScope.$new();
   }));
+  
+  describe('main controller tests', function(){
+    it('should sum up a total', function(){
+      var sum = 3 + 2;
+      expect(sum).toEqual(5);
+    });
+  });
 
  
 });
