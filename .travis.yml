@@ -1,11 +1,15 @@
 language: node_js
 node_js:
-   - "0.12"
-   - "0.10"
-   - "0.8"
-   - "0.6"
-notifications: 
+- '0.12'
+notifications:
   email: false
 before_script:
-  - npm install -g bower
-  - bower install
+- npm install -g bower
+- bower install
+deploy:
+  provider: heroku
+  api_key:
+    secure: m6rAB6ZYZlK9Me+Z8ps54arRNDHOLHhYjmpPwvFkwxKb4aasREJf/RuMXW1itoacH4I0UJxNair1WiTfvgY5G80bWKnA1ui9UHBgLvGJ3CM4BX8RXrDfxUI5+LKrxeUExJ/STr2XqdvUewKQ3rL6OYDhzduuOKZ9A0UJhgFwV2V8MkmThiF+GDw4gsNNupLl9W4V/wR64ANnuhnHidpZ5CefXLbCJzGPjOG1UX6vGhSlggQa691rg2qYA/TR2ifspML/az9wMls9BNHIjofsAZSKD+6qDPLBwurnNga7HxITjYLlVbq5Ra9KGQeVC3bZUB3Wvfs4vud2xv1+Fg2QIPFE/aOEFb7rz03xNTK5oP511cY2OC3yvkEQ8M4X33EM1pCGiKPuhurIZ9OQxE4uWeEGJD8cURmRoQ4ik7NPQO/bh5piVvYMjB7T7k9TDqUxS9e0m+dD2vqheMUsWa4JhyT/nD8d5EabJ6iwXMhqlbPxkpo37n4p8VVi4rrmKkZANybsc6m4tFCzP4djzf+VvkAC6QLVv+LeqoyXzw9RmyZswmafzan6GBqy3Tid/k1hLc9PM31pVgRetKBKF2vZ7sULjYYZJOLuXjC2mdlL4nuZxq2dD4gLOS9aUff3E/zEddA7WSXGLjYYvDFYSGpHJphxOc7hyR47hMZvhitSGiw=
+  app: young-harbor-4599
+  on:
+    repo: karrde00/angular-pokedex
