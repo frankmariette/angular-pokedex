@@ -3,6 +3,9 @@ node_js:
 - '0.12'
 notifications:
   email: false
+cache: 
+  directories: 
+    - node_modules
 before_script:
 - npm install -g bower
 - bower install
