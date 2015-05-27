@@ -6,4 +6,6 @@ node_js:
    - "0.6"
 notifications: 
   email: false
-install: npm install && bower install
+before_script:
+  - npm install -g bower
+  - bower install
